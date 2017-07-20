@@ -81,6 +81,8 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://s-media-cache-ak0.pinimg.com/736x/cc/56/40/cc5640b823b798b90c4dc1ebd2866a6f--magikarp-meme-meme-meme.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
          session.send(`Here's the list of songs that I can sing! \n ambing \n momay..!`);
+      }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://s-media-cache-ak0.pinimg.com/736x/cc/56/40/cc5640b823b798b90c4dc1ebd2866a6f--magikarp-meme-meme-meme.jpg'}]});
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....\n
 But you can try these commands \n
