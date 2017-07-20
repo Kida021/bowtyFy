@@ -56,6 +56,8 @@ bot.dialog('/', function (session) {
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/challenge-accepted-597051.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('spider') | session.message.text.toLowerCase().contains('spiders')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/did-you-say-597052.jpg'}]});
+      }else if(session.message.text.toLowerCase().contains('relationships') | session.message.text.toLowerCase().contains('relationship')){
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://missapronlady.files.wordpress.com/2013/09/because-a-stoner-only-needs-food_o_295176.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('ipis') | session.message.text.toLowerCase().contains('cockroach')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQw2tjQHyJxoQfEhzaPRfyxJlyCsO5ZnFdtBDfwA4D-brZqL-D'}]});
       }else if(session.message.text.toLowerCase().contains('momay') | session.message.text.toLowerCase().contains('monay')){
