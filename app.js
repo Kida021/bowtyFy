@@ -75,6 +75,10 @@ Kakantutin ka lang nila`);
          session.send(`Jibanyan ba... isa syang yokai na aking kaibigan... pero sa POKELAND isa syang mamaw na di mapantayan ng lahat \n
 lahat na ata ng players ay sinasamba sya at tinitingala....`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://static3.fjcdn.com/comments/No+this+is+the+god+of+pokemon+_4139a9c4fb5bb55e19ea8717d66ff083.png'}]});
+      }else if(session.message.text.toLowerCase().contains('kida') | session.message.text.toLowerCase().contains('heizenberg')){
+         session.send(`Si Kida at Heizenberg ba..... isa lng sila sa mga mababang uring nilalang na nag hahangad na \n
+mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp lng sa harap ni GOD JIBANYA`);
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://s-media-cache-ak0.pinimg.com/736x/cc/56/40/cc5640b823b798b90c4dc1ebd2866a6f--magikarp-meme-meme-meme.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
          session.send(`Here's the list of songs that I can sing! \n ambing \n momay..!`);
       }else{
