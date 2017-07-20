@@ -50,6 +50,8 @@ bot.dialog('/', function (session) {
         session.send(`I'm not RUDE... I'M BOTTFY and I don't have any emotion nor attitude...`);
       }else if(session.message.text.toLowerCase().contains('tell me something')){
         session.send(`I know one of your secret... ]:)`);
+      }else if(session.message.text.toLowerCase().contains('secret')){
+        session.send(`You secretly moving your hands up and down in front of the computer... ]:)`);
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
