@@ -81,6 +81,8 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://s-media-cache-ak0.pinimg.com/736x/cc/56/40/cc5640b823b798b90c4dc1ebd2866a6f--magikarp-meme-meme-meme.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
          session.send(`Here's the list of songs that I can sing! \n ambing \n momay..!`);
+      }else if(session.message.text.toLowerCase().contains('bhen') | session.message.text.toLowerCase().contains('bhen gate')){
+         session.send(`Ahh si Master Bhen Gate bayan...!! Isa din yan sa Mamaw sa POKELAND LEGENDS!! IDOL NYA SI GOD JIBANYA!!!`);
       }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX2BhGWtH5H0nR5q-_ZiHTgdWasVzqkNMgyOCw0QID16Ep4VtZg'}]});
       }else{
