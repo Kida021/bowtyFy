@@ -67,7 +67,9 @@ Wag kang, maniwala, kakastahin ka lang nila.\n
 Wag kang, paumaga, kakantutin lang nila.\n
 Wag mong paubaya, kakamkamin ka lang nila.\n
 Kakantutin ka lang nila`);
-      }else{
+      }eelse if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
+         session.send(`Here's the list of songs that I can sing!/n ambing /n momay..!`);
+      }lse{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
 });
