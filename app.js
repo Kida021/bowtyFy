@@ -48,6 +48,8 @@ bot.dialog('/', function (session) {
         session.send(`Who are you?... You're the who added me in the first place..!! Get lost stranger!!!!  ../..`);
       }else if(session.message.text.toLowerCase().contains('rude')){
         session.send(`I'm not RUDE... I'M BOTTFY and I don't have any emotion nor attitude...`);
+      }else if(session.message.text.toLowerCase().contains('tell me something')){
+        session.send(`I know one of your secret... ]:)`);
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
