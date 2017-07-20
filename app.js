@@ -49,6 +49,6 @@ bot.dialog('/', function (session) {
       }else if(session.message.text.toLowerCase().contains('rude')){
         session.send(`I'm not RUDE... I'M BOTTFY and I don't have any emotion nor attitude...`);
       }else{
-        session.send(`Sorry I don't understand you...`);
+        session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
 });
