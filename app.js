@@ -101,12 +101,12 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
             session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://4.bp.blogspot.com/-ryiITHJoTn8/TsqpAEss4BI/AAAAAAAAAy8/Z9P8VBMzqqo/s1600/Rock-paper-scissors_%2528rock%2529.png'}]});
       }else if(session.message.text.toLowerCase().contains('cheater') | session.message.text.toLowerCase().contains('mandurugas')){
             session.send(`]:)`);
-            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://4.bp.blogspot.com/-ryiITHJoTn8/TsqpAEss4BI/AAAAAAAAAy8/Z9P8VBMzqqo/s1600/Rock-paper-scissors_%2528rock%2529.png'}]});
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://images.nationalgeographic.com/wpf/media-live/photos/000/004/cache/cheetah-jump_493_990x742.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
          session.send(`You JUST DIED`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
       }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
-         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'hhttps://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg/1200px-Cheetah_%28Acinonyx_jubatus%29_female_2.jpg'}]});
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX2BhGWtH5H0nR5q-_ZiHTgdWasVzqkNMgyOCw0QID16Ep4VtZg'}]});
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....\n
 But you can try these commands \n
