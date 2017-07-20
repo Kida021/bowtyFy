@@ -52,8 +52,8 @@ bot.dialog('/', function (session) {
         session.send(`I know one of your secret... ]:)`);
       }else if(session.message.text.toLowerCase().contains('secret')){
         session.send(`You secretly moving your hands up and down in front of the computer... ]:)`);
-      } else if(session.message.text.toLowerCase().contains('challange') | session.message.text.toLowerCase().contains('challanged')){
-         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/challanged-accepted-597050.jpg'}]});
+      } else if(session.message.text.toLowerCase().contains('challenge') | session.message.text.toLowerCase().contains('challenged')){
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/challenge-accepted-597051.jpg'}]});
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
