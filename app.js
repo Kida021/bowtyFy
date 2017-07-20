@@ -43,7 +43,7 @@ bot.dialog('/', function (session) {
     if(session.message.text.toLowerCase().contains('hello')){
       session.send(`Hello i'm BOWTYFY`);
       }else if(session.message.text.toLowerCase().contains('help')){
-        session.send(`How can I help you?`);
+        session.send(`How can I help you're dull and boring life`);
       }else{
         session.send(`Sorry I don't understand you...`);
       }
