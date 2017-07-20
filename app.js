@@ -83,8 +83,11 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          session.send(`Here's the list of songs that I can sing! \n ambing \n momay..!`);
       }else if(session.message.text.toLowerCase().contains('bhen') | session.message.text.toLowerCase().contains('bhen gate')){
          session.send(`Ahh si Master Bhen Gate bayan...!! Isa din yan sa Mamaw sa POKELAND LEGENDS!! IDOL NYA SI GOD JIBANYA!!!`);
-      }else if(session.message.text.toLowerCase().contains('jaymar') | session.message.text.toLowerCase().contains('jaymar')){
+      }else if(session.message.text.toLowerCase().contains('jaymar') | session.message.text.toLowerCase().contains('jay mar')){
          session.send(`Ahh si Master Jaymar bayan...!! Isa din yan sa Mamaw sa POKELAND LEGENDS Ka server sya ni MASTER BHEN GATE!! IDOL NYA SI GOD JIBANYA!!!`);
+      }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
+         session.send(`AYou JUST DIED`);
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
       }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX2BhGWtH5H0nR5q-_ZiHTgdWasVzqkNMgyOCw0QID16Ep4VtZg'}]});
       }else{
