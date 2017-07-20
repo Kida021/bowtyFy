@@ -46,6 +46,8 @@ bot.dialog('/', function (session) {
         session.send(`How can I help you're dull and boring life`);
       }else if(session.message.text.toLowerCase().contains('who are you')){
         session.send(`Who are you?... You're the who added me in the first place..!! Get lost stranger!!!!  ../..`);
+      }else if(session.message.text.toLowerCase().contains('rude')){
+        session.send(`I'm not RUDE... I'M BOTTFY and I don't have any emotion nor attitude...`);
       }else{
         session.send(`Sorry I don't understand you...`);
       }
