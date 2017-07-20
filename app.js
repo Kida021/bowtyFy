@@ -21,7 +21,7 @@ bot.on('contactRelationUpdate', function (message) {
         var name = message.user ? message.user.name : null;
         var reply = new builder.Message()
                 .address(message.address)
-                .text("Hello %s... Thanks for adding me. Just Tell me how can I help you're dull and boring LIFE ../.. .", name || 'there');
+                .text("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .", name || 'there');
         bot.send(reply);
     } else {
         // delete their data
