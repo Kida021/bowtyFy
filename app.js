@@ -61,6 +61,12 @@ bot.dialog('/', function (session) {
 Na para bang akoy nasa kalangitan
 Sa tuwing si momay ay aking 
 Matitikman ( sa tuwing si momay ay aking matitikman )`);
+      }else if(session.message.text.toLowerCase().contains('momay') | session.message.text.toLowerCase().contains('monay')){
+         session.send(`Wag kang, samama, kakantutin ka lang nila.\n
+                        Wag kang, maniwala, kakastahin ka lang nila.\n
+                        Wag kang, paumaga, kakantutin lang nila.\n
+                        Wag mong paubaya, kakamkamin ka lang nila.\n
+                        Kakantutin ka lang nila`);
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
