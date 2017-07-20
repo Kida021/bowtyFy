@@ -61,7 +61,7 @@ bot.dialog('/', function (session) {
 Na para bang akoy nasa kalangitan
 Sa tuwing si momay ay aking 
 Matitikman ( sa tuwing si momay ay aking matitikman )`);
-      }else if(session.message.text.toLowerCase().contains('momay') | session.message.text.toLowerCase().contains('monay')){
+      }else if(session.message.text.toLowerCase().contains('ambing') | session.message.text.toLowerCase().contains('kambing')){
          session.send(`Wag kang, samama, kakantutin ka lang nila.\n
                         Wag kang, maniwala, kakastahin ka lang nila.\n
                         Wag kang, paumaga, kakantutin lang nila.\n
