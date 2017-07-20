@@ -72,7 +72,7 @@ Wag kang, paumaga, kakantutin lang nila.\n
 Wag mong paubaya, kakamkamin ka lang nila.\n
 Kakantutin ka lang nila`);
       }else if(session.message.text.toLowerCase().contains('jibanyan') | session.message.text.toLowerCase().contains('jibanya')){
-         session.send(`Jibanyan ba... isa syang yokai na aking kaibigan... pero sa POKELAND isa syang mamaw na di mapantayan ang lahat \n
+         session.send(`Jibanyan ba... isa syang yokai na aking kaibigan... pero sa POKELAND isa syang mamaw na di mapantayan ng lahat \n
 lahat na ata ng players ay sinasamba sya at tinitingala....`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://static3.fjcdn.com/comments/No+this+is+the+god+of+pokemon+_4139a9c4fb5bb55e19ea8717d66ff083.png'}]});
       }else if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
