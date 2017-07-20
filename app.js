@@ -57,10 +57,10 @@ bot.dialog('/', function (session) {
       }else if(session.message.text.toLowerCase().contains('spider') | session.message.text.toLowerCase().contains('spiders')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/did-you-say-597052.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('momay') | session.message.text.toLowerCase().contains('monay')){
-         session.send(`Lumilipad nanaman ang isip ko
-Na para bang akoy nasa kalangitan
-Sa tuwing si momay ay aking 
-Matitikman ( sa tuwing si momay ay aking matitikman )`);
+         session.send(`Lumilipad nanaman ang isip ko\n
+                     Na para bang akoy nasa kalangitan\n
+                     Sa tuwing si momay ay aking \n
+                     Matitikman ( sa tuwing si momay ay aking matitikman )`);
       }else if(session.message.text.toLowerCase().contains('ambing') | session.message.text.toLowerCase().contains('kambing')){
          session.send(`Wag kang, samama, kakantutin ka lang nila.\n
                         Wag kang, maniwala, kakastahin ka lang nila.\n
