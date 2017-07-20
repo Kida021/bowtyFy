@@ -52,6 +52,8 @@ bot.dialog('/', function (session) {
         session.send(`I know one of your secret... ]:)`);
       }else if(session.message.text.toLowerCase().contains('secret')){
         session.send(`You secretly moving your hands up and down in front of the computer... ]:)`);
+      } else if(session.message.text.toLowerCase().contains('herewego') | session.message.text.toLowerCase().contains('here we go')){
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/Well-Here-we.jpg'}]});
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
       }
