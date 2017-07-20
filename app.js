@@ -85,6 +85,12 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          session.send(`Ahh si Master Bhen Gate bayan...!! Isa din yan sa Mamaw sa POKELAND LEGENDS!! IDOL NYA SI GOD JIBANYA!!!`);
       }else if(session.message.text.toLowerCase().contains('jaymar') | session.message.text.toLowerCase().contains('jay mar')){
          session.send(`Ahh si Master Jaymar bayan...!! Isa din yan sa Mamaw sa POKELAND LEGENDS Ka server sya ni MASTER BHEN GATE!! IDOL NYA SI GOD JIBANYA!!!`);
+      }}else if(session.message.text.toLowerCase().contains('game') | session.message.text.toLowerCase().contains('play')){
+         session.send(`what do you want to play?`);
+         session.send(`how about a game of rock paper and scissor?`);
+         if(session.message.text.toLowerCase().contains('rock') | session.text.toLowerCase().contains('bato') ){
+            session.send(`Papel?`);
+         } 
       }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
          session.send(`You JUST DIED`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
