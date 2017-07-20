@@ -70,6 +70,8 @@ Kakantutin ka lang nila`);
       }else if(session.message.text.toLowerCase().contains('sing') | session.message.text.toLowerCase().contains('sings')){
          session.send(`Here's the list of songs that I can sing! \n ambing \n momay..!`);
       }else{
-        session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....`);
+        session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....\n
+But you can try these commands \n
+who are you, tell me i'm rude, make me sing..`);
       }
 });
