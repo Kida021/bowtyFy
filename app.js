@@ -43,9 +43,9 @@ bot.dialog('/', function (session) {
     if(session.message.text.toLowerCase().contains('hello')){
       session.send(`Hello i'm BOWTYFY`);
       }else if(session.message.text.toLowerCase().contains('help')){
-        session.send(`How can I help you're dull and boring life`);
+        session.send(`How can I help your dull and boring life`);
       }else if(session.message.text.toLowerCase().contains('who are you')){
-        session.send(`Who are you?... You're the who added me in the first place..!! Get lost stranger!!!!  ../..`);
+        session.send(`Who are you?... You're the one who added me in the first place..!! Get lost stranger!!!!  ../..`);
       }else if(session.message.text.toLowerCase().contains('rude')){
         session.send(`I'm not RUDE... I'M BOTTFY and I don't have any emotion nor attitude...`);
       }else if(session.message.text.toLowerCase().contains('tell me something')){
