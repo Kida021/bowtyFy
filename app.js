@@ -88,6 +88,10 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
       }else if(session.message.text.toLowerCase().contains('play') | session.message.text.toLowerCase().contains('game')){
          session.send(`What game do you want to play..`);
          session.send(`How about a game of rock,paper and scissor(bato,bato,pick)?`);
+         session.send(`If you beat me i'll give you something special!! if you know what i mean!! ]:)`);
+         if(session.message.text.toLowerCase().contains('rock') | session.message.text.toLowerCase().contains('bato')){
+            session.send(`Paper`);
+            }
       }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
          session.send(`You JUST DIED`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
