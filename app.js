@@ -92,6 +92,7 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          
       }else if(session.message.text.toLowerCase().contains('play rock') | session.message.text.toLowerCase().contains('play bato')){
             session.send(`Paper`);
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://en.academic.ru/pictures/enwiki/82/Rock-paper-scissors_%28paper%29.png'}]});
       }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
          session.send(`You JUST DIED`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
