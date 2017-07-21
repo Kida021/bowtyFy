@@ -45,13 +45,5 @@ var DialogLabels = {
    Noob : 'Noob'
 };
 bot.dialog('/', function (session) {
-   //try search option
-   builder.Prompts.choice(
-      session,
-      'What do you want me to do?',
-      [DialogLabels.Images, DialogLabels.Noob],
-      {
-         maxRetries: 3,
-         retryPrompt: 'Not a valid option'
-      }
+   session.sends('SEND NEWDS');
 });
