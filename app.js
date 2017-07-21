@@ -32,9 +32,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
                 }
             ]
         });
-    } else {
-        // Echo back users text
-        session.send("You said: %s", session.message.text);
-    }
+    } 
 });
 server.post('/api/messages', connector.listen());
