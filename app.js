@@ -22,7 +22,7 @@ bot.on('contactRelationUpdate', function (message) {
         var name = message.user ? message.user.name : null;
         var reply = new builder.Message()
                 .address(message.address)
-                .text("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .", name || 'there');
+                .text("Hello %s...  I'm Bowtyfy your personal bot companion... pls rate your boredom from the scale of 0-infinity? ../.. .", name || 'there');
         bot.send(reply);
     } else {
         // delete their data
