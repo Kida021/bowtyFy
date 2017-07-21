@@ -73,9 +73,6 @@ function createHeroCard(session) {
         .text('.....')
         .images([
             builder.CardImage.create(session, 'https://media.makeameme.org/created/rip-in-the.jpg')
-        ])
-        .buttons([
-            builder.CardAction.openUrl(session, 'https://docs.microsoft.com/bot-framework/', 'Get Started')
         ]);
 }
 
