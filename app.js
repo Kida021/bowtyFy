@@ -16,22 +16,25 @@ var connector = new builder.ChatConnector({
 });
 // This is a dinner reservation bot that uses multiple dialogs to prompt users for input.
 // This is a reservation bot that has a menu of offerings.
-var bot = new builder.UniversalBot(connector,function (session){
-   var msg = session.message;
-   if(msg.attachments && msg.attachments.length > 0 ) {
-      var attachments = msg.attachments[0];
-      session.send({
-         text: "You sent:",
-         attatchments: [
-            {
-               contentType: attachment.contentType,
-               contentUrl:attatchment.contentUrl,
-               name: attachment.name
-            }
-         ]
-      });
-   } else
-      session.send("You said : %s", session.message.text);
-
+// Create your bot with a function to receive messages from the user
+var bot = new builder.UniversalBot(connector, function (session) {
+    var msg = session.message;
+    if (msg.attachments && msg.attachments.length > 0) {
+     // Echo back attachment
+     var attachment = msg.attachments[0];
+        session.send({
+            text: "You sent:",
+            attachments: [
+                {
+                    contentType: attachment.contentType,
+                    contentUrl: attachment.contentUrl,
+                    name: attachment.name
+                }
+            ]
+        });
+    } else {
+        // Echo back users text
+        session.send("You said: %s", session.message.text);
+    }
 });
 server.post('/api/messages', connector.listen());
