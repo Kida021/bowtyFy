@@ -108,7 +108,7 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
       }else if(session.message.text.toLowerCase().contains('rip') | session.message.text.toLowerCase().contains('r.i.p')){
          session.send(`YOU DIED ALONE!!`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://i.imgflip.com/915lv.jpg?a416496'}]});
-      }else if(session.message.text.toLowerCase().contains('linkin park') | session.message.text.toLowerCase().contains('chester')){
+      }else if(session.message.text.toLowerCase().contains('linkedin park') | session.message.text.toLowerCase().contains('chester')){
          session.send(`we've lost another legend ;(!!`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://media.makeameme.org/created/rip-in-the.jpg'}]});
       }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
