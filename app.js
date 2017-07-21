@@ -21,7 +21,7 @@ var bot = new builder.UniversalBot(connector, [
         var reply = new builder.Message()
                 .address(session.address)
                 .text("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .", name || 'there');
-        bot.send(reply);
+        session.send(reply);
         builder.Prompts.text(session, "Please provide a reservation date and time (e.g.: June 6th at 5pm)");
     },
     function (session, results) {
