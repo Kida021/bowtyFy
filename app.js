@@ -18,7 +18,7 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector, [
     function (session) {       
         var name = session.user ? session.user.name : null;
-        var reply = new builder.Session()
+        var reply = new builder.Message()
                 .address(session.address)
                 .text("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .", name || 'there');
         session.send(reply);
