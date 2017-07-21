@@ -41,5 +41,8 @@ String.prototype.contains = function(content){
   return this.indexOf(content) !== -1;
 }
 bot.dialog('/', function (session) {
-   session.send('What do you want me to do?');
+   function(session){
+      session.send('What do you want me to do?');
+   }
+   
 });
