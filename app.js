@@ -16,28 +16,22 @@ var connector = new builder.ChatConnector({
 });
 // This is a dinner reservation bot that uses multiple dialogs to prompt users for input.
 // This is a reservation bot that has a menu of offerings.
-var bot = new builder.UniversalBot(connector, [
-    function(session){
-        session.send("Welcome to Contoso Hotel and Resort.");
-        session.beginDialog("mainMenu");
-    }
-]);
+var bot = new builder.UniversalBot(connector,function (session){
+   var msg = session.message;
+   if(msg.attachments && msg.attachments.length > 0 ) {
+      var attachments = msg.attachments[0];
+      session.send({
+         text: "You sent:",
+         attatchments: [
+            {
+               contentType: attachment.contentType,
+               contentUrl:attatchment.contentUrl,
+               name: attachment.name
+            }
+         ]
+      });
+   } else
+      session.send("You said : %s", session.message.text);
 
-// Display the main menu and start a new request depending on user input.
-bot.dialog("mainMenu", [
-    function(session){
-        builder.Prompts.choice(session, "Main Menu:", menuItems);
-    },
-    function(session, results){
-        if(results.response){
-            session.beginDialog(menuItems[results.response.entity].item);
-        }
-    }
-])
-.triggerAction({
-    // The user can request this at any time.
-    // Once triggered, it clears the stack and prompts the main menu again.
-    matches: /^main menu$/i,
-    confirmPrompt: "This will cancel your request. Are you sure?"
 });
 server.post('/api/messages', connector.listen());
