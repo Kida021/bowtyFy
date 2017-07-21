@@ -1,64 +1,67 @@
+// This loads the environment variables from the .env file
 require('dotenv-extended').load();
 
 var builder = require('botbuilder');
 var restify = require('restify');
-server.listen(process.env.port || process.env.PORT || 8080, function () {
-   console.log('%s listening to %s', server.name, server.url);
+
+// Setup Restify Server
+var server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function () {
+    console.log('%s listening to %s', server.name, server.url);
 });
 
-//creating chat bot
-
+// Create chat bot and listen to messages
 var connector = new builder.ChatConnector({
-    appId: "8a542b90-96c6-42ce-91ba-3aeb28470e62",
-    appPassword: "QcDi824W8C1oof6eaAu63J9"
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 server.post('/api/messages', connector.listen());
-//dialogLabels
+
 var DialogLabels = {
-    Images: 'images',
-    Noob: 'noob',
-    Sing: 'sing',
-    Support: 'support'
+    Hotels: 'Hotels',
+    Flights: 'Flights',
+    Support: 'Support'
 };
+
 var bot = new builder.UniversalBot(connector, [
     function (session) {
         // prompt for search option
         builder.Prompts.choice(
             session,
-            'Heres my existing commands: images , noob, and sing!',
-            [DialogLabels.Images, DialogLabels.Noob, DialogLabels.Sing],
+            'Are you looking for a flight or a hotel?',
+            [DialogLabels.Flights, DialogLabels.Hotels],
             {
                 maxRetries: 3,
                 retryPrompt: 'Not a valid option'
             });
     },
-   function (session, result) {
+    function (session, result) {
         if (!result.response) {
             // exhausted attemps and no selection, start over
             session.send('Ooops! Too many attemps :( But don\'t worry, I\'m handling that exception and you can try again!');
             return session.endDialog();
         }
-      // on error, start over
+
+        // on error, start over
         session.on('error', function (err) {
             session.send('Failed with message: %s', err.message);
             session.endDialog();
         });
-       // continue on proper dialog
+
+        // continue on proper dialog
         var selection = result.response.entity;
         switch (selection) {
-            case DialogLabels.Images:
-                return session.beginDialog('images');
-            case DialogLabels.Noob:
-                return session.beginDialog('noob');
-              case DialogLabels.Sing:
-                return session.beginDialog('sing');
+            case DialogLabels.Flights:
+                return session.beginDialog('flights');
+            case DialogLabels.Hotels:
+                return session.beginDialog('hotels');
         }
     }
 ]);
-bot.dialog('images', require('./images'));
-bot.dialog('noob', require('./noob'));
-bot.dialog('sing', require('./sing'));
-bot.dialog('sing', require('./support'))
+
+bot.dialog('flights', require('./flights'));
+bot.dialog('hotels', require('./hotels'));
+bot.dialog('support', require('./support'))
     .triggerAction({
         matches: [/help/i, /support/i, /problem/i]
     });
