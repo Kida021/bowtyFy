@@ -40,10 +40,7 @@ bot.on('deleteUserData', function (message) {
 String.prototype.contains = function(content){
   return this.indexOf(content) !== -1;
 }
-var DialogLabels = {
-   Images: 'Images',
-   Noob : 'Noob'
-};
+
 bot.dialog('/', function (session) {
    session.sends('SEND NEWDS');
 });
