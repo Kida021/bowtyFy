@@ -36,8 +36,8 @@ var bot = new builder.UniversalBot(connector, [
     }
 ]);
 
-var HeroCardName = 'linkin park';
-var ThumbnailCardName = 'Thumbnail card';
+var HeroCardName = 'Linkin park';
+var ThumbnailCardName = 'Game';
 var ReceiptCardName = 'Receipt card';
 var SigninCardName = 'Sign-in card';
 var AnimationCardName = "Animation card";
@@ -77,13 +77,24 @@ function createHeroCard(session) {
 }
 
 function createThumbnailCard(session) {
-    return new builder.ThumbnailCard(session)
-        .title('Likin Park <3')
-        .subtitle('In the End')
-        .text('.....')
-        .images([
-            builder.CardImage.create(session, 'https://media.makeameme.org/created/rip-in-the.jpg')
-        ]);
+if(session.message.text.toLowerCase().contains('laro') | session.message.text.toLowerCase().contains('game')){
+         session.send(`What game do you want to play..`);
+         session.send(`How about a game of rock,paper and scissor(bato,bato,pick)?`);
+         session.send(`If you beat me i'll give you something special!! if you know what i mean!! ]:)`);
+         
+      }else if(session.message.text.toLowerCase().contains('play rock') | session.message.text.toLowerCase().contains('play bato')){
+            session.send(`Paper`);
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://en.academic.ru/pictures/enwiki/82/Rock-paper-scissors_%28paper%29.png'}]});
+      }else if(session.message.text.toLowerCase().contains('play paper') | session.message.text.toLowerCase().contains('play papel')){
+            session.send(`Scissor`);
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_%28scissors%29.png'}]});
+      }else if(session.message.text.toLowerCase().contains('play Scissor') | session.message.text.toLowerCase().contains('play gunting')){
+            session.send(`Rock`);
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://4.bp.blogspot.com/-ryiITHJoTn8/TsqpAEss4BI/AAAAAAAAAy8/Z9P8VBMzqqo/s1600/Rock-paper-scissors_%2528rock%2529.png'}]});
+      }else if(session.message.text.toLowerCase().contains('cheater') | session.message.text.toLowerCase().contains('mandurugas')){
+            session.send(`]:)`);
+            session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://images.nationalgeographic.com/wpf/media-live/photos/000/004/cache/cheetah-jump_493_990x742.jpg'}]});
+      }
 }
 
 var order = 1234;
