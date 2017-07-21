@@ -36,7 +36,7 @@ var bot = new builder.UniversalBot(connector, [
     }
 ]);
 
-var HeroCardName = 'Hero card';
+var HeroCardName = 'linkin park';
 var ThumbnailCardName = 'Thumbnail card';
 var ReceiptCardName = 'Receipt card';
 var SigninCardName = 'Sign-in card';
