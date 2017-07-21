@@ -1,20 +1,10 @@
 // This loads the environment variables from the .env file
 var restify = require('restify');
 var builder = require('botbuilder');
-var Swagger = require('swagger-client');
-var Promise = require('bluebird');
-var url = require('url');
-var fs = require('fs');
-var util = require('util');
 //=========================================================
 // Bot Setup
 //=========================================================
 // Setup Restify Server
-var connectorApiClient = new Swagger(
-    {
-        url: 'https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json',
-        usePromise: true
-    });
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 8080, function () {
    console.log('%s listening to %s', server.name, server.url);
