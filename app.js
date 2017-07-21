@@ -115,6 +115,8 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX2BhGWtH5H0nR5q-_ZiHTgdWasVzqkNMgyOCw0QID16Ep4VtZg'}]});
       }else if(session.message.text.toLowerCase().contains('hep hep') | session.message.text.toLowerCase().contains('hip hip')){
          session.send(`Hooray!!`);
+      }else if(session.message.text.toLowerCase().contains('hooray') | session.message.text.toLowerCase().contains('huray')){
+         session.send(`Hep Hep!!`);
       }else{
         session.send(`Sorry I don't understand alien language please learn how to speak in english!! and talk to me again.....\n
 But you can try these commands \n
