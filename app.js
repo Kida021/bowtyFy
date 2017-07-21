@@ -105,6 +105,9 @@ mapantayan nila ang lakas at galing ni GOD JIBANYA.... sila ay isang magikarp ln
       }else if(session.message.text.toLowerCase().contains('dead') | session.message.text.toLowerCase().contains('died')){
          session.send(`You JUST DIED`);
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'http://i3.kym-cdn.com/photos/images/original/001/114/978/5d2.png'}]});
+      }else if(session.message.text.toLowerCase().contains('rip') | session.message.text.toLowerCase().contains('r.i.p')){
+         session.send(`YOU DIED ALONE!!`);
+         session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://i.imgflip.com/915lv.jpg?a416496'}]});
       }else if(session.message.text.toLowerCase().contains('noob') | session.message.text.toLowerCase().contains('bobo')){
          session.send({attachments: [{contenttype: 'image/jpg', contenturl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX2BhGWtH5H0nR5q-_ZiHTgdWasVzqkNMgyOCw0QID16Ep4VtZg'}]});
       }else{
