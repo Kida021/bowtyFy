@@ -17,7 +17,11 @@ var connector = new builder.ChatConnector({
 // This is a dinner reservation bot that uses a waterfall technique to prompt users for input.
 var bot = new builder.UniversalBot(connector, [
     function (session) {       
-        bot.send("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .");
+        var name = session.user ? session.user.name : null;
+        var reply = new builder.Message()
+                .address(message.address)
+                .text("Hello %s... Thanks for adding me. Just Tell me how can I help your dull and boring LIFE ../.. .", name || 'there');
+        bot.send(reply);
         builder.Prompts.text(session, "Please provide a reservation date and time (e.g.: June 6th at 5pm)");
     },
     function (session, results) {
