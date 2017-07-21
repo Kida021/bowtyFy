@@ -40,9 +40,18 @@ bot.on('deleteUserData', function (message) {
 String.prototype.contains = function(content){
   return this.indexOf(content) !== -1;
 }
+var DialogLabels = {
+   Images: 'Images',
+   Noob : 'Noob'
+};
 bot.dialog('/', function (session) {
-   function(session){
-      session.send('What do you want me to do?');
-   }
-   
+   //try search option
+   builder.Prompts.choice(
+      session,
+      'What do you want me to do?',
+      [DialogLabels.Images, DialogLabels.Noob],
+      {
+         maxRetries: 3,
+         retryPrompt: 'Not a valid option'
+      }
 });
