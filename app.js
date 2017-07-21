@@ -9,12 +9,7 @@ var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 8080, function () {
    console.log('%s listening to %s', server.name, server.url);
 });
-// Create chat bot
-var connector = new builder.ChatConnector({
-    appId: "8a542b90-96c6-42ce-91ba-3aeb28470e62",
-    appPassword: "QcDi824W8C1oof6eaAu63J9"
-});
-/ This is a dinner reservation bot that uses multiple dialogs to prompt users for input.
+// This is a dinner reservation bot that uses multiple dialogs to prompt users for input.
 var bot = new builder.UniversalBot(connector, [
     function (session) {
         session.send("Welcome to the dinner reservation.");
