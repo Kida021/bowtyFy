@@ -18,7 +18,8 @@ server.post('/api/messages', connector.listen());
 
 var bot = new builder.UniversalBot(connector, [
     function (session) {
-        builder.Prompts.choice(session, 'What card would like to test?', CardNames, {
+         session.send("Hi I'm Bowtyfy your personal bot companion... pls rate your boredom from the scale of 0-infinity?");
+        builder.Prompts.choice(session, 'What card would like to me to do?', CardNames, {
             maxRetries: 3,
             retryPrompt: 'Ooops, what you wrote is not a valid option, please try again'
         });
